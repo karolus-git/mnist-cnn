@@ -115,8 +115,8 @@ def build(
             rotation_range=rotation,
             width_shift_range=shift,
             height_shift_range=shift,
-            SHEAR_RATIO=shear,
-            ZOOM_RATIO=[0.1,1.1],
+            shear_range=shear,
+            zoom_range=[0.1,1.1],
             validation_split=0.2)
 
         # Fit the image generator
