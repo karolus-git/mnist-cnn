@@ -81,7 +81,7 @@ if canvas.image_data is not None:
         # Get images of the same digit
         df_images = df.loc[df.y == val].sample(frac=1).head(EXAMPLES).x.to_numpy()
         
-        # Show those iamges
+        # Show those images
         images = st.columns(EXAMPLES)
         for image, df_image in zip(images, df_images):
 

@@ -151,7 +151,7 @@ def build(
 
 
 def load(augmented=False):
-    return models.load_model('./mnist-cnn/models/model_augmented.h5') if augmented else models.load_model('./mnist-cnn/models/model.h5')
+    return models.load_model('./mnist-cnn/models/model_aug.h5') if augmented else models.load_model('./mnist-cnn/models/model.h5')
 
 def predict(model, x):
 
