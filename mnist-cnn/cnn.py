@@ -112,7 +112,7 @@ def build(
     else:
         # Build an image generator
         dataGen = ImageDataGenerator(
-            ROTATION_ANGLE=rotation,
+            rotation_range=rotation,
             width_shift_range=shift,
             height_shift_range=shift,
             SHEAR_RATIO=shear,
